@@ -1,0 +1,21 @@
+/* Solito reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Per prevenire lo scroll oltre il limite */
+html,
+body{
+    overflow: hidden;
+}
+
+
+/* Per evitare la comparsa della scrollbar */
+.webgl{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none
+}
