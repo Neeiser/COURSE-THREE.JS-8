@@ -46,6 +46,19 @@ window.addEventListener('resize', () =>
 
 })
 
+window.addEventListener('dblclick', () => //AL doppio click sulla finestra, essa diventa in schermo intero. Cliccandola nuovamente esce dallo schermo intero.
+{ //NON FUNZIONA SU SAFARI.
+    if(!document.fullscreenElement)
+    {
+        canvas.requestFullscreen()
+    }
+    else
+    {
+        document.exitFullscreen()
+    }
+
+})
+
 /**
  * Camera
  */
