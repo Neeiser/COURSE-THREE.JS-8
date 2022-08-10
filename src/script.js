@@ -42,6 +42,7 @@ window.addEventListener('resize', () =>
 
     //Updating Renderer
     renderer.setSize(sizes.width, sizes.height)
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2)) //Prima era fuori dall'event listener, lo metto dentro così diventa responsive al resize.
 
 })
 
